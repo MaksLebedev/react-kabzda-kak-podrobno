@@ -2,6 +2,7 @@ import "./App.css";
 import { PageTitle } from "./components/appTitle/PageTitle";
 import { Accordion } from "./components/accordion/Accordion";
 import { Rating } from "./components/rating/Rating";
+import { OnOff } from "./components/onOff/OnOff";
 
 function App() {
   console.log("App rendering");
@@ -20,6 +21,7 @@ function App() {
       <Rating value={3} />
       <Rating value={4} />
       <Rating value={5} />
+      <OnOff control={true} />
     </div>
   );
 }
