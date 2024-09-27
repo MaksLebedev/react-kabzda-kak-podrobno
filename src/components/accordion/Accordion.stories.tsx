@@ -31,7 +31,7 @@ export const OpenedAccordion = () => {
   );
 };
 
-export const AccordionDemo = () => {
+export const ModeChanging = () => {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <Accordion
