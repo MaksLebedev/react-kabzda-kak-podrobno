@@ -5,6 +5,7 @@ import { Accordion } from "./Accordion";
 import { useState } from "react";
 
 export default {
+  title: "Accordion",
   component: Accordion,
 };
 
@@ -25,7 +26,7 @@ export const OpenedAccordion = () => {
     <Accordion
       titleValue="Opened Accordion"
       collapsed={false}
-      onChange={() => {}}
+      onChange={onChangeHandler}
     />
   );
 };
