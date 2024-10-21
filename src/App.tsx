@@ -25,6 +25,8 @@ function App() {
         onChange={() => {
           setAccordionCollapsed(!accordionCollapsed);
         }}
+        items={[]}
+        onClick={() => {}}
       />
 
       <OnOff
