@@ -53,26 +53,25 @@ export const SetIntervalExample = () => {
 
   // асинхронные функции запускаем внутри useEffect
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     console.log("tick:" + counter);
-  //     setCounter((state) => state + 1);
-  //   }, 1000);
-  // }, []);
+  useEffect(() => {
+    setInterval(() => {
+      console.log("tick:" + counter);
+      setCounter((state) => state + 1);
+    }, 1000);
+  }, []);
 
   
-  const currentDate = new Date();
-  console.log(currentDate.getHours());
+  // const currentDate = new Date();
    
 
   return (
     <>
       Hello, counter: {counter} - fake: {fake}
-      {/* <button onClick={() => setFake(fake + 1)}>fake+</button>
-      <button onClick={() => setCounter(counter + 1)}>counter+</button> */}
-      <div>
+      <button onClick={() => setFake(fake + 1)}>fake+</button>
+      <button onClick={() => setCounter(counter + 1)}>counter+</button>
+      {/* <div>
       ClockByMakson: {currentDate.getHours()}:{currentDate.getMinutes()}:{currentDate.getSeconds()}
-      </div>
+      </div> */}
       
     </>
   );
